@@ -15,29 +15,29 @@ int main()
             y=c;
         }
     }
-        else if(b>a && b>c)
+      else  if(b>a && b>c)
         {
             x=b;
-            if(a>c)
+            if(c>a)
+            {
+                y=c;
+            }
+            else
+            {
+                y=a;
+            }
+        }
+        else
+        {
+            x=c;
+            if(a>b)
             {
                 y=a;
             }
             else
             {
-                y=c;
+                y=b;
             }
         }
-            else
-            {
-                x=c;
-                if(a>b)
-                {
-                    y=a;
-                }
-                else
-                {
-                    y=b;
-                }
-            }
-            printf("%d",x+y);
+        printf("%d",x+y);
 }
