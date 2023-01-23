@@ -7,9 +7,16 @@ int main()
     {
         for(j=1;j<=n;j++)
         {
-            printf("%c ",i+64);
+            if(i==j)
+            {
+                printf("0");
+            }
+            else
+            {
+                printf("x");
+            }
         }
-    printf("
+        printf("
 ");
-}
+    }
 }
